@@ -1,0 +1,37 @@
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.range {
+  height: 5px;
+  width: 100%;
+  width: 326px;
+  color: white;
+  opacity: 60%;
+}
+
+.time {
+  justify-content: space-between;
+  width: 326px;
+  margin: auto;
+  color: white;
+  opacity: 60%;
+}
+
+.buttons {
+  justify-content: space-between;
+  font-size: 35px;
+  width: 326px;
+  margin: auto;
+  margin-top: 42px;
+}
+
+.buttons button:first-child,
+button:last-child {
+  font-size: 26.6px;
+}
+
+.buttons button:nth-child(3) {
+  font-size: 60px;
+}

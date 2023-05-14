@@ -1,0 +1,126 @@
+.homepage {
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.homepage > div:first-child {
+  margin: 0px 24px;
+  padding-top: 50px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 32px;
+  color: linear-gradient(to right, red, yellow);
+  justify-content: space-between;
+}
+
+.homepage > div:first-child img {
+  width: 12%;
+  border-radius: 50%;
+}
+
+.tagline {
+  margin: 0px 24px;
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.joinus {
+  margin: 0px 24px;
+  justify-content: space-between;
+  padding: 9px 24px;
+  border-radius: 3px;
+  background-color: rgba(32, 32, 34, 1);
+}
+
+.joinus p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  opacity: 80%;
+}
+
+.joinus button {
+  font-size: 10px;
+  width: 78px;
+  height: 22px;
+  background-color: rgba(35, 171, 92, 1);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Anirudh {
+  background: linear-gradient(
+    to right,
+    rgba(80, 101, 218, 1),
+    rgba(85, 111, 255, 1),
+    rgba(197, 87, 173, 1),
+    rgba(230, 95, 154, 1),
+    rgba(230, 97, 118, 1)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.songsContainer {
+  margin: 0px 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.songsContainer > p:nth-child(1) {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+
+.songsContainer > p:nth-child(2) {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 60%;
+  margin-bottom: 16px;
+}
+
+.songsContainer > div {
+  height: 225px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 280px;
+  margin-right: 16px;
+}
+
+.card div {
+  width: 280px;
+  height: 160px;
+  border-radius: 6px;
+  /* background-image: linear-gradient(
+    to right,
+    rgba(250, 217, 97, 1),
+    rgba(247, 107, 28, 1)
+  ); */
+}
+
+.title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.singer {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  opacity: 60%;
+}

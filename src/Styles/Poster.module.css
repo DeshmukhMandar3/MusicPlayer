@@ -1,0 +1,47 @@
+.poster {
+  width: 100%;
+  margin: auto;
+}
+
+.poster > div:first-child {
+  justify-content: space-between;
+  width: 326px;
+  margin: auto;
+  font-size: 20px;
+  padding-top: 20px;
+  font-weight: 800;
+}
+
+.poster > div:nth-child(2) {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.poster > div:nth-child(2) img {
+  border-radius: 15px;
+}
+
+.poster > p:nth-child(4) {
+  width: 274px;
+  height: 22px;
+  margin: auto;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 21.86px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 32px;
+}
+.poster > p:nth-child(3) {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.poster > button {
+  background-color: rgba(46, 48, 53, 1);
+  width: 220px;
+  height: 32px;
+  border-radius: 6px;
+}
