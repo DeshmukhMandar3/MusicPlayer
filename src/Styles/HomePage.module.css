@@ -1,5 +1,4 @@
 .homepage {
-  height: 100vh;
   background-color: #1e1e1e;
   color: white;
 }
@@ -124,4 +123,33 @@
   letter-spacing: 0.20000000298023224px;
   text-align: left;
   opacity: 60%;
+}
+
+.tweeter {
+  width: 300px;
+}
+
+.tweeter div:first-child {
+  width: 120px;
+  height: 120px;
+}
+
+.tweetTitle {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 20px;
+  margin: 16px;
+}
+
+.tweeterUser {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 60%;
+  margin: 16px;
 }

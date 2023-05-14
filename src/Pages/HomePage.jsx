@@ -44,6 +44,15 @@ const HomePage = () => {
     },
   ];
 
+  let tweets = [
+    {
+      name: "Shreyas Doshi",
+      image:
+        "https://s3-alpha-sig.figma.com/img/039f/f494/ffbf59d5c8715cd1918f7afb53669f7d?Expires=1684713600&Signature=nUTXmNpm9e7fV439DsamdB~yXNF1CtvXbP1NSZM~jDdDy~y3p8VQkCpF78ESwokMmoVBzUB7pnng5cjNR2TBSaNtt-EO3~JLH-y-gr7aEXTxjJolso9qW5ltZq4MP6OiSBy9PVbmRsndDd7AQvgPuBRs0H86~xEu5FV4q~bhv3v1Z~pabS4GuFKNSeXWgnrL3~2BDGRnKZr71qwbjQE6YpB~boikKVPOwykeeoO-0nZCw4YqOdmJPWOn9f3UmBkQkHpWtZx2aV49Wq0pKbBMIkQyXX2EuMTUVyvsNN0cBiZ-dklBa9mQRzIcAkkyCUMXQGa546zRZ31cW7g6QPJ4yQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      subject: "Fundamentals of Product Design",
+    },
+  ];
+
   return (
     <div className={Style.homepage}>
       <Flex>
@@ -96,7 +105,25 @@ const HomePage = () => {
       <div className={Style.songsContainer}>
         <Text>Tweet Shorts</Text>
         <Text>Listen to audio versions of tweet threads</Text>
-        <Flex></Flex>
+        <Flex>
+          {tweets.map((el) => {
+            return (
+              <Flex className={Style.tweeter}>
+                <div>
+                  <img
+                    style={{ width: "400px" }}
+                    src={el.image}
+                    alt={el.name}
+                  />
+                </div>
+                <div>
+                  <Text className={Style.tweetTitle}>{el.subject}</Text>
+                  <Text className={Style.tweeterUser}>{el.name}</Text>
+                </div>
+              </Flex>
+            );
+          })}
+        </Flex>
       </div>
     </div>
   );
