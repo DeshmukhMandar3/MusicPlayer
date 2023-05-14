@@ -14,9 +14,15 @@
   justify-content: space-between;
 }
 
-.homepage > div:first-child img {
-  width: 12%;
+.userimage {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.userimage img {
+  height: 150%;
 }
 
 .tagline {
@@ -101,11 +107,6 @@
   width: 280px;
   height: 160px;
   border-radius: 6px;
-  /* background-image: linear-gradient(
-    to right,
-    rgba(250, 217, 97, 1),
-    rgba(247, 107, 28, 1)
-  ); */
 }
 
 .title {

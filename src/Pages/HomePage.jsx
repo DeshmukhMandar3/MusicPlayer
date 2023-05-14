@@ -13,6 +13,7 @@ const HomePage = () => {
     setSongInd(num);
     navigate("/music");
   }
+
   let colours = ["red", "yellow", "green", "blue", "pink", "grey"];
   let poster = [
     {
@@ -49,10 +50,12 @@ const HomePage = () => {
         <Text>
           Hey <span className={Style.Anirudh}>Anirudh</span> 👋
         </Text>
-        <img
-          src="https://64.media.tumblr.com/b552cb7e6d367311d3bc585aed7139be/e98d7122a8f0fac1-12/s1280x1920/c18387549857f8a51a9c0e067207bd2b2b8319c6.jpg"
-          alt="user"
-        />
+        <div className={Style.userimage}>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/aa36/39a7/0f5ffa292521ddacef92c174b15c17b6?Expires=1684713600&Signature=iGhN5G-~IJd~M02ALqpMHxnuljZIQVxRTFf0QNgdmyXix9mDO~oIayaISEB8o2AaOOFDr5SYSOWY3WnY03RlMLTKLqqHJb3iOUA~kZCUG6xfbVlWLrtpRDGKMSbeqbMWySLQSd3PjC-APEwmwZdNwJV9tjCAyA0MmuKZpXdgHAgTYhyGijVS~mbPh0k~F5renNr4uO5TxrVX5EcLrRgk6W-Gj0AG3~y51aRwjd0bsSqKgW8YPcfZXPneNmcKKmFt7PErE3jYINo-yi1vtpV9h2dFJSDx9MsnQA2mYp4nxPxQ~CwpqL8CBYj-9UvSM5IZAyI5UjPmW3hjeA90IxP-tg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt="user"
+          />
+        </div>
       </Flex>
       <Text className={Style.tagline}>
         It’s a nice day to learn something new
@@ -89,6 +92,11 @@ const HomePage = () => {
             );
           })}
         </Flex>
+      </div>
+      <div className={Style.songsContainer}>
+        <Text>Tweet Shorts</Text>
+        <Text>Listen to audio versions of tweet threads</Text>
+        <Flex></Flex>
       </div>
     </div>
   );

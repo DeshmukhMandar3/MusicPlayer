@@ -5,7 +5,9 @@ import { BsChevronDown, BsShare } from "react-icons/bs";
 import { MusicContext } from "../Context/Context";
 
 const Poster = () => {
+  //index of the song
   let { songInd } = React.useContext(MusicContext);
+
   let poster = [
     {
       image: "./Posters/Attention.png",
@@ -34,17 +36,21 @@ const Poster = () => {
       by: "Michelle Williams",
     },
   ];
+
   return (
     <div className={Style.poster}>
       <Flex>
         <BsChevronDown />
         <BsShare />
       </Flex>
+      {/* Poster of the song */}
       <div>
         <img src={poster[songInd].image} alt={poster[songInd].title} />
       </div>
+      {/* Title and Artist */}
       <Text>{poster[songInd].title}</Text>
       <p>{poster[songInd].by}</p>
+
       <button
         style={{ fontSize: "14px", fontWeight: "400", marginBottom: "8px" }}
       >
